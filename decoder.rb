@@ -35,7 +35,7 @@ def decode_message(mo_message)
   message_decoded = ''
   mo_message = mo_message.split('   ')
   mo_message.each { |msg| message_decoded += " #{decode_word(msg)}" }
-  print(message_decoded.strip)
+  message_decoded.strip
 end
 
 # decode_message(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
